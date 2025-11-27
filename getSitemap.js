@@ -5,7 +5,7 @@ const url = "http://ivanfa71.beget.tech/sitemap.xml";
   let data = await result.text();
   console.log("data: ", data);
 
-  fs.writeFile("./sitemap2.xml", data, (err) => {
+  fs.writeFile("./sitemap.xml", data, (err) => {
     if (err) console.error(err);
     else {
       console.log("The file has been written!");
